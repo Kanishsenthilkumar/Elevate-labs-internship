@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Task Manager Pro</h1>
+            <button id="theme-toggle" class="icon-button">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </header>
+
+        <section class="task-input-section">
+            <div class="input-group">
+                <input type="text" id="task-title-input" placeholder="What needs to be done?" required>
+                <input type="datetime-local" id="task-due-date-input">
+                <button id="add-task-btn" class="main-button">Add Task</button>
+            </div>
+        </section>
+
+        <section class="task-list-section">
+            <div class="controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                    <button class="filter-btn" data-filter="overdue">Overdue</button>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 0%;"></div>
+                <span class="progress-text">0%</span>
+            </div>
+
+            <ul id="task-list" class="task-list">
+                <p id="empty-state" class="empty-state hidden">✨ No tasks yet. Add one above!</p>
+            </ul>
+        </section>
+
+        <footer class="glass-effect">
+            <p>&copy; 2025 Task Manager Pro. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
