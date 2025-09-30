@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Premium Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="subtitle">We'll respond within 24 hours</p>
+
+        <div class="success-message" id="successMessage" role="alert" aria-live="polite">
+            <h3><span class="check-icon" aria-hidden="true"></span> Message sent successfully</h3>
+            <p>Thank you for reaching out. We'll get back to you soon.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="John Doe"
+                    autocomplete="name"
+                    aria-describedby="nameError"
+                    aria-required="true"
+                >
+                <span class="field-icon success-icon" id="nameSuccessIcon" aria-hidden="true">✓</span>
+                <span class="field-icon error-icon" id="nameErrorIcon" aria-hidden="true">⚠</span>
+                <div class="error-message" id="nameError" role="alert"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="john@example.com"
+                    autocomplete="email"
+                    aria-describedby="emailError"
+                    aria-required="true"
+                >
+                <span class="field-icon success-icon" id="emailSuccessIcon" aria-hidden="true">✓</span>
+                <span class="field-icon error-icon" id="emailErrorIcon" aria-hidden="true">⚠</span>
+                <div class="error-message" id="emailError" role="alert"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="Tell us how we can help..."
+                    aria-describedby="messageError charCount"
+                    aria-required="true"
+                ></textarea>
+                <span class="field-icon success-icon" id="messageSuccessIcon" aria-hidden="true">✓</span>
+                <span class="field-icon error-icon" id="messageErrorIcon" aria-hidden="true">⚠</span>
+                <div class="char-count" id="charCount">0 / 500</div>
+                <div class="error-message" id="messageError" role="alert"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
