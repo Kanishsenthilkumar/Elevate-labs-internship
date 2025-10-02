@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Fetch - Task 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 User Data Dashboard</h1>
+            <p class="subtitle">Task 7 - Fetching data from JSON API</p>
+        </header>
+        
+        <div class="controls">
+            <button id="reloadBtn" class="reload-btn">🔄 Refresh Data</button>
+            <div class="stats" id="stats"></div>
+        </div>
+
+        <div id="loadingMsg" class="loading-msg">
+            <div class="spinner"></div>
+            Loading user data...
+        </div>
+
+        <div id="userContainer" class="user-container"></div>
+        
+        <div id="errorMsg" class="error-msg"></div>
+        
+        <footer class="server-info">
+            <div id="serverInfo"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

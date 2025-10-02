@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "email": "leanne.graham@company.com",
+      "phone": "1-770-736-8031",
+      "address": {
+        "street": "Kulas Light",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+      },
+      "company": {
+        "name": "Romaguera-Crona"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "email": "ervin.howell@company.com",
+      "phone": "010-692-6593",
+      "address": {
+        "street": "Victor Plains",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771"
+      },
+      "company": {
+        "name": "Deckow-Crist"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "email": "clementine.bauch@company.com",
+      "phone": "1-463-123-4447",
+      "address": {
+        "street": "Douglas Extension",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157"
+      },
+      "company": {
+        "name": "Romaguera-Jacobson"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "email": "patricia.lebsack@company.com",
+      "phone": "493-170-9623",
+      "address": {
+        "street": "Hoeger Mall",
+        "city": "South Elvis",
+        "zipcode": "53919-4257"
+      },
+      "company": {
+        "name": "Robel-Corkery"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "email": "chelsey.dietrich@company.com",
+      "phone": "(254)954-1289",
+      "address": {
+        "street": "Skiles Walks",
+        "city": "Roscoeview",
+        "zipcode": "33263"
+      },
+      "company": {
+        "name": "Keebler LLC"
+      }
+    }
+  ]
+}
